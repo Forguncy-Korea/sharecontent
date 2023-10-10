@@ -1,0 +1,215 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 29.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 29
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 100.0
+          }
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 23.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 100.0
+          }
+        }
+      }
+    },
+    "Count": 18
+  },
+  "Values": {
+    "2,1": "SMS보내기",
+    "4,1": "SMS보낼 번호 ",
+    "8,6": "SMS보내기"
+  },
+  "AttachInfos": {
+    "6,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "8,6": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "var page = Forguncy.Page;\r\n\r\nvar URLcell = page.getCell(\"URL\");\r\nvar URLcellvalue = URLcell.getValue();\r\n\r\nvar Titlecell = page.getCell(\"Title\");\r\nvar Titlecellvalue = Titlecell.getValue()\r\n\r\nvar phoneNo= Forguncy.Page.getCell(\"phonenumber\").getValue();  \r\nwindow.location.href = \"sms:\"+phoneNo+\"?body=\"+Titlecellvalue+\"  \"+URLcellvalue;",
+            "ID": "b985042e4d574d298c48a735924fe73e"
+          }
+        ],
+        "Text": "SMS보내기",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 16.0,
+        "FontWeight": 3
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 2 -25",
+        "Body",
+        "#FFFF0000",
+        "Bold",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "2,1": 1,
+      "4,1": 2,
+      "6,1": 3,
+      "6,2": 4,
+      "6,3": 4,
+      "6,4": 4,
+      "6,5": 4,
+      "6,6": 4,
+      "6,7": 4,
+      "6,8": 4,
+      "6,9": 4,
+      "6,10": 4,
+      "6,11": 4,
+      "6,12": 4,
+      "6,13": 4,
+      "6,14": 4,
+      "6,15": 4,
+      "8,6": 4,
+      "8,7": 4,
+      "8,8": 4,
+      "8,9": 4,
+      "8,10": 4,
+      "9,6": 4,
+      "9,7": 4,
+      "9,8": 4,
+      "9,9": 4,
+      "9,10": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "8,6,2,5",
+    "0,2,1,2",
+    "6,1,1,15"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "모바일마스터페이지",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core",
+        "isMobile": true
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "FGC_Anonymous"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "URL",
+      "Formula": "문자보내기_모바일!$B$1"
+    },
+    {
+      "Name": "phonenumber",
+      "Formula": "문자보내기_모바일!$B$7"
+    },
+    {
+      "Name": "Title",
+      "Formula": "문자보내기_모바일!$C$1"
+    }
+  ]
+}//qH2DlyrAzUC05WmA3fbUpRP0b0IRUfck+XybXZThxFKoXjHFESiSzyhWhQp7nl1MGb42Jpm9BJlxoraJaAXqFn2WyCsnv7YGqYQkYKCEz+ub+ut2Jk/8aiBNf6kdQJfXEEZOYuCKWu5Jan1rDMFzAgdtQHtYfe97EEjyl6VPMuvSvfqnaIEjKSWtj70Q2zjpVWqZ+NF9vBwRZjYQViEqea6SXm6JvRkfndRDpQNirpilRESVxAOpByHBMXshoYF5Anyb7jEZ0E3xfM5zE95tvdNvbfUu2x34+zle6/fzirGGzJwYdadxpI8OkVWOPo21GdR84dNCYBzQxtyeyqm399HPyjcPaTz6XDNUOiwdpXjNTjnJxNxevduGNG56OihVUWktTydv+JNn8eukaCDSDfE+ukPkvlDcEhyuk67O3gQ0l/P/WWEXMdCVb+Ww9Y6kKmviAAOCR7H5dwFSnjRjYiALg0dre9Qs46/l0qRVgabgczsaErfW201KElfl5UOqU1IstzflFB2btW9Fok+XJfTVwcQxMO67Le66uHjDjyRT4x6U4REIjhYB2Xo00u5l7HWVEg3PRAmYPWP3t4qIygvKw84qEdBvg0/sordQCEXR3lk5RZOQKng8e8yvV4xEjEVdgEZlI90SptFLr4JSR5Fh06czXe0KhRd1QpA1wbgL4cBx1LzbwB5oMX8a4xYZDwKCsTWsLGFGp/LLilHwv9REvf/FABbBx675icNUap2Tw7clunimW/DNHrNRkiw+eUZGlcfp0XjEHas08d88LVCWBTTHxtUemud7OzDj8o7XjicsNBGFWDfmvBIVcKt3rO2DRmXs0lKw4eumkgVwT0vkGkwE590p/K7sDI7E5CKU9hMepoHeC7+jXDtOkpvpHFrq4kPyRtIuJG4mtRfknw==|920

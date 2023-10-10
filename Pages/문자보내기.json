@@ -1,0 +1,187 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 29.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 30
+  },
+  "Cols": {
+    "Count": 20
+  },
+  "Values": {
+    "2,1": "문자공유",
+    "4,2": "문자보낼 번호 ",
+    "10,7": "문자보내기",
+    "14,0": "* 모바일브라우저에서 사용 가능합니다."
+  },
+  "AttachInfos": {
+    "6,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "10,7": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "var page = Forguncy.Page;\r\n\r\nvar cell = page.getCell(\"URL\");\r\nvar URLcellvalue = cell.getValue();\r\n\r\nvar phoneNo= Forguncy.Page.getCell(\"phonenumber\").getValue();  \r\nwindow.location.href = \"sms:\"+phoneNo+\"?body=\"+URLcellvalue;",
+            "ID": "f91fd98c4cff4f89a0313bccf7975fb6",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+            "MessageFormula": "모바일 브라우저에서 사용가능합니다."
+          }
+        ],
+        "Text": "문자보내기",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "Foreground": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 3
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 16.0,
+        "FontWeight": 3
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 5
+      },
+      {
+        "HorizontalAlignment": 6
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 2 -25",
+        "#FFFF0000",
+        "Body",
+        "Bold",
+        "@",
+        "[AUTO]General",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "2,1": 1,
+      "4,2": 2,
+      "6,2": 3,
+      "6,3": 4,
+      "6,4": 4,
+      "6,5": 4,
+      "6,6": 4,
+      "6,7": 4,
+      "6,8": 4,
+      "6,9": 4,
+      "6,10": 4,
+      "6,11": 4,
+      "6,12": 4,
+      "6,13": 4,
+      "6,14": 4,
+      "6,15": 4,
+      "6,16": 4,
+      "6,17": 4,
+      "10,7": 4,
+      "10,8": 4,
+      "10,9": 4,
+      "10,10": 4,
+      "10,11": 4,
+      "11,7": 4,
+      "11,8": 4,
+      "11,9": 4,
+      "11,10": 4,
+      "11,11": 4,
+      "14,0": 5
+    },
+    "RowStyles": {
+      "14": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "6,2,1,16",
+    "10,7,2,5",
+    "14,0,1,20"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MobilePageName": "문자보내기_모바일",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "FGC_Anonymous"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "phonenumber",
+      "Formula": "문자보내기!$C$7"
+    },
+    {
+      "Name": "URL",
+      "Formula": "문자보내기!$B$1"
+    }
+  ]
+}//VmYIAq8b4MVL1aSI/ZiNUMQJjPNJ2kr43sEm9u71zEac37lQ/+UmxKDKfanHhBgFfXZQVAgzzaR5Kn4Im64H2mqADUVYrENcbx/sG12qpX1VM9uHVJHO+ipZe+xPbSW1SPEQa3MTw0/rcj6BZWbEK4HtxNCkT7KE8fIaMblJ2jKaw3bAu2Hsq/AqiNRHx3YhcUsquhwYu6bk0xO/RO13gmAz0szjBDTbwol6SPpkb9qZJvXECRHSaOWza7l6z5rNyrq6qWgdTuBLEwKPjew2fixxlPVcCQnDiHWotIAmgzqa9+p92ieutdWAbKp4dqmKNihOibyY05gr7Vz0+R+MtkdgXvzRP6AZjYNOjg32RroMO2KZUD6suDoePqs+VrEmqnV5/N8bo6CC+vsN01+Gq6yC4h6k/P6jl/Bz/+f5O+axVxZouRfwvb/cTTM6dnI/LWsPV0l0LzGAvOxcgsvdOUxa3XghgZHziKkKekFb3togiPSc4ElMp/lJVhJ3ZCj/slWVFgsCrgRdcX5Eyh/CoCM48GYKnZ/3m+2ZPot5tB+i8B/T6zIMjWnoIqXSCWIueH38F19NflJMSR+zttweDFbX+0mh+hw5Y1V1NmGN4u+MNPA36f2AQuZ2obdy/iY/C6/1dZNQAe9ByT7Emx3lt/VAkfelqd5NOkSVTvQlG5RPFZvkDfFECaR7sYKwpyir4KpYoIlilZngRO7x0h6/Zl0IW8JiaKvCguuu9kmu/JZDTfPFj1j9jWUMx8ZoD64BaNyOSyMnCPgdeRmm0YQquDTFOse5+gOfckZtb70j1UjsUKGREpXZ09tFctZR6KmUs44oa+Z4PTtrMu97YvP3XD70FI4vHZ2vDpnNcTd+cmk+/73gUTBtCwX44fyo/vt7B/faGUEol3AjC31tpAeu+w==|920

@@ -1,0 +1,364 @@
+{
+  "Rows": {
+    "Count": 47
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 95
+  },
+  "Values": {
+    "1,3": "Forguncy",
+    "1,12": "게시글 공유하기",
+    "1,18": "프로젝트 파일 다운로드",
+    "1,27": "카카오톡 공유 방법",
+    "1,35": "메일 공유 방법",
+    "1,41": "문자 공유 방법"
+  },
+  "AttachInfos": {
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "게시판목록"
+          }
+        ],
+        "Text": "Forguncy",
+        "ClickMode": 1
+      }
+    },
+    "1,12": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "게시판목록",
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "게시글 공유하기",
+        "ClickMode": 1
+      }
+    },
+    "1,18": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "URL": "https://dev.grapecity.co.kr/bbs/download.php?bo_table=forguncy_bntips&wr_id=8&no=1",
+            "IsOpenInNewTab": true,
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "프로젝트 파일 다운로드",
+        "ClickMode": 1
+      }
+    },
+    "1,27": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "URL": "https://dev.grapecity.co.kr/bbs/board.php?bo_table=forguncy_bntips&wr_id=11",
+            "IsOpenInNewTab": true,
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "카카오톡 공유 방법",
+        "ClickMode": 1
+      }
+    },
+    "1,35": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "URL": "https://dev.grapecity.co.kr/bbs/board.php?bo_table=forguncy_bntips&wr_id=13",
+            "IsOpenInNewTab": true,
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "메일 공유 방법",
+        "ClickMode": 1
+      }
+    },
+    "1,41": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "URL": "https://dev.grapecity.co.kr/bbs/board.php?bo_table=forguncy_bntips&wr_id=12",
+            "IsOpenInNewTab": true,
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "문자 공유 방법",
+        "ClickMode": 1
+      }
+    },
+    "4,11": {
+      "IsPlaceHolderCell": true
+    },
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "스타일1",
+        "Items": [
+          {
+            "Text": "공유하기",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Text": "게시판목록",
+                "IconPath": "Navigation/229_list_5.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "게시판목록",
+                    "IgnoreTargetPageCachedCurrentRowInfo": false
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 16.0,
+            "Bold": true,
+            "Height": 45.0,
+            "Width": 200.0,
+            "IconHeight": 15.0,
+            "IconWidth": 15.0
+          },
+          {
+            "FontSize": 13.333333333333332,
+            "Bold": false,
+            "Height": 32.0,
+            "Width": 200.0,
+            "IconHeight": 15.0,
+            "IconWidth": 15.0
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 24.0,
+        "Foreground": 1,
+        "Underline": false
+      },
+      {
+        "Background": 2,
+        "FontFamily": 3,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 4,
+        "Foreground": 1,
+        "Underline": false
+      },
+      {
+        "Background": 2,
+        "FontFamily": 5,
+        "Foreground": 1,
+        "Formatter": 6,
+        "HorizontalAlignment": 7,
+        "Underline": false
+      },
+      {
+        "Background": 2,
+        "FontFamily": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "FontFamily": 5,
+        "Foreground": 1,
+        "Formatter": 6,
+        "HorizontalAlignment": 8,
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 10,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "나눔스퀘어 네오 OTF Heavy",
+        "Background 1 0",
+        "#FF66D0A1",
+        "Body",
+        "Bold",
+        "나눔스퀘어 네오 OTF Bold",
+        "[AUTO]General",
+        "Center",
+        "Left",
+        "Background 1 -15",
+        "나눔스퀘어 네오 OTF Regular"
+      ],
+      "Borders": [
+        {
+          "Color": 9
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,3": 0,
+      "1,12": 1,
+      "1,18": 2,
+      "1,26": 3,
+      "1,27": 2,
+      "1,35": 4,
+      "1,36": 3,
+      "1,37": 3,
+      "1,38": 3,
+      "1,39": 3,
+      "1,40": 3,
+      "1,41": 4,
+      "1,42": 3,
+      "1,43": 3,
+      "1,44": 3,
+      "1,45": 3,
+      "1,46": 3,
+      "2,26": 3,
+      "2,35": 3,
+      "2,36": 3,
+      "2,37": 3,
+      "2,38": 3,
+      "2,39": 3,
+      "2,40": 3,
+      "2,41": 3,
+      "2,42": 3,
+      "2,43": 3,
+      "2,44": 3,
+      "2,45": 3,
+      "2,46": 3,
+      "4,10": 5,
+      "5,1": 6,
+      "5,10": 5,
+      "6,10": 5,
+      "7,10": 5,
+      "8,10": 5,
+      "9,10": 5,
+      "10,10": 5,
+      "11,10": 5,
+      "12,10": 5,
+      "13,10": 5,
+      "14,10": 5,
+      "15,10": 5,
+      "16,10": 5,
+      "17,10": 5,
+      "18,10": 5,
+      "19,10": 5,
+      "20,10": 5,
+      "21,10": 5,
+      "22,10": 5,
+      "23,10": 5,
+      "24,10": 5,
+      "25,10": 5,
+      "26,10": 5,
+      "27,10": 5,
+      "28,10": 5,
+      "29,10": 5,
+      "30,10": 5,
+      "31,10": 5,
+      "32,10": 5,
+      "33,10": 5,
+      "34,10": 5,
+      "35,10": 5,
+      "36,10": 5,
+      "37,10": 5,
+      "38,10": 5,
+      "39,10": 5,
+      "40,10": 5,
+      "41,10": 5,
+      "42,10": 5,
+      "43,10": 5,
+      "44,10": 5,
+      "45,10": 5,
+      "46,10": 5
+    },
+    "RowStyles": {
+      "0": 7,
+      "1": 7,
+      "2": 7,
+      "3": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 3,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "4,11,43,84",
+    "1,12,2,6",
+    "1,18,2,8",
+    "1,3,2,7",
+    "5,1,42,9",
+    "1,27,2,7",
+    "1,35,2,6",
+    "1,41,2,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//AJBJzVEZxjmgjFrMBPtjCpT+fMCxibRoibDFiqJxANg99wtnS9eOlL+TaXg7HxJ5leKhjonU4qkj49GO20ulTZZyLO8RBE8/djZFtxufm6a8CFXUZK9HYocfyd3HDPXO5XKuQVopqFnpyttHYYWrdKf3P48f2/aPIfIyIhmUjbgXwcn3R4s6pISDbdfKceyX8Os5I+JZ07EvwYya95/TltTnv2mXPr0nQOM67tbj/tEvgpXaQ94qlVFLB5MNhdhyxNMMl222WvCt5uA6VkV/bomm/h5n5wlaDDuoPyO2gNNrO+0KEm3fKFBk7ghOxCGRzWr+IfJ4/gMUNqAz+7qqeeN01jo5+pirue97sRDZjhRpretylc2jwIcjhXNjcv0k8A1KMQ2XpV7fuCGDMCIyGoL9ITAe2gG2NnleqLyNHYDodjl4GMDZ6YCrJzqaGnZxt3hDRyqxdOvCBZblw6veDwS5b2hHGS572409i4YBUrm5EPcltF0M6jV413zBIHIbYfsIbnbQvBCeO+0ZXcx6yTJFjbgNAHYxbDm71y+poGH2Xu1a2Dvu7W79Ub7vK6Hzb1INDWT31qkhyzxK9STiuGNiEb6pBRXysmVrJDebu3MDBA6cOGLrUvERxd0IOaPL2CWs1FrzibtIld5ID88RnbrV2dZS9W5qVCmAmUSgMm8bU6osWy7lg2kheoJIAbbVKNes7D1MWI6lQoz65E85yIWV+nyQ7+3jKWLyvKaCvyHh/HVx0Ra6Lcsw5Muvh/uv3ou7tz/Xogf628zjRGSuFRCMn8sjJLQk5+tL5bGIG0W1nXUbWKMbTfQ4mzNq++iw7HXUOpLEX2n4BbnkvMQbFO2kTJ5HJ/AM2e0M6iZVNcs4HLXKP6Qtp9AajSi/iYSClTFtnmKR7V5vjhx/TRD6zg==|920

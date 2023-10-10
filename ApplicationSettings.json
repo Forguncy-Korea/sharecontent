@@ -1,0 +1,11 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "w9Z8o8ZnVesS"
+  },
+  "ListviewLoadingIndicatorSettings": {},
+  "GlobalProperties": [],
+  "WebSitePort": 36169,
+  "UserServicePort": 48198,
+  "StartPage": "게시판목록",
+  "StartDateFiscalYear": 4
+}

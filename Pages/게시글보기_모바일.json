@@ -1,0 +1,456 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 27.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 91.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 51.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "Count": 34
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 100.0
+          }
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 6.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 44.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 100.0
+          }
+        }
+      }
+    },
+    "Count": 18
+  },
+  "Values": {
+    "23,13": "목록"
+  },
+  "Formulas": {
+    "29,2": "CONCATENATE(\"https://forguncy.co.kr/sharecontent/게시글보기_모바일?ID=\",C31)",
+    "30,2": "GETURLQUERYVALUE(\"ID\")"
+  },
+  "AttachInfos": {
+    "2,0": {
+      "BindingInfo": {
+        "TableName": "회원_게시글",
+        "ColumnName": "제목",
+        "GUID": "4c6b23c9-4b97-4835-9162-0e9c8adf3eb6"
+      }
+    },
+    "6,0": {
+      "BindingInfo": {
+        "TableName": "회원_게시글",
+        "ColumnName": "내용",
+        "GUID": "c0bad8a3-622a-4d8e-be81-d52a378241c9"
+      },
+      "CellType": {
+        "$type": "HtmlRichEditor.HtmlRichEditor, HtmlRichEditor"
+      }
+    },
+    "23,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "게시판목록",
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "목록",
+        "TemplateKey": "버튼_Gray"
+      }
+    },
+    "25,4": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "var page = Forguncy.Page;\r\nvar cell = page.getCell(\"Title\");\r\nvar cellValue = cell.getValue();\r\n\r\nvar url_cell = page.getCell(\"URL\");\r\nvar URLcellvalue = url_cell.getValue();\r\n\r\nvar body_cell = page.getCell(\"body\");\r\nvar bodycellvalue = body_cell.getValue();\r\n\r\n//Kakao.init('3a99e1ea344f9f27a29298f566cc7acd')\r\n\r\n\r\nKakao.Share.sendDefault({\r\n  objectType: 'feed',\r\n  content: {\r\n  title: cellValue,\r\n  imageUrl:\r\n      'https://www.grapecity.co.kr/images/metalsmith/forguncy/index/forguncy.png',\r\n  link: {\r\n           mobileWebUrl: URLcellvalue,\r\n           webUrl: URLcellvalue,\r\n        },\r\n  }\r\n});",
+            "ID": "4aa354163c644558bb1f30e7ca0257c9"
+          }
+        ],
+        "ImagePath": "pngwing.com.png"
+      }
+    },
+    "25,8": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "메일보내기_모바일",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=게시글보기_모바일!ID"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=메일보내기_모바일!T1"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=게시글보기_모바일!URL"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=메일보내기_모바일!T2"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=게시글보기_모바일!Title"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=메일보내기_모바일!T3"
+                }
+              }
+            ]
+          }
+        ],
+        "ImagePath": "pngegg.png"
+      }
+    },
+    "25,12": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "문자보내기_모바일",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=게시글보기_모바일!URL"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=문자보내기_모바일!URL"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=게시글보기_모바일!Title"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=문자보내기_모바일!C1"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "ImagePath": "sms_icon-icons.com_67293.png"
+      }
+    },
+    "31,2": {
+      "ListViewInfo": {
+        "Name": "리스트뷰1",
+        "TableName": "회원_게시글",
+        "RowIndex": 31,
+        "ColumnIndex": 2,
+        "RowCount": 3,
+        "ColumnCount": 14,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "회원_게시글",
+            "ColumnName": "ID",
+            "GUID": "b2303795-3d88-43d5-849c-3fe7d31c8d49"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=게시글보기_모바일!ID"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_NewFashionListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "32,2": {
+      "BindingInfo": {
+        "TableName": "회원_게시글",
+        "ColumnName": "ID",
+        "GUID": "b47b55f4-4f75-4d71-a08a-fcbc3a75e34d"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 21.333333333333332,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 13.333333333333332,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 5
+      },
+      {
+        "FontFamily": 5,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 21.333333333333332,
+        "FontWeight": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Center",
+        "Left",
+        "Top",
+        "나눔스퀘어 네오 OTF Regular",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,0": 0,
+      "6,0": 1,
+      "23,13": 2,
+      "23,14": 3,
+      "23,15": 3,
+      "23,16": 3,
+      "24,13": 2,
+      "24,14": 2,
+      "24,15": 2,
+      "24,16": 2,
+      "25,4": 4,
+      "25,5": 5,
+      "25,6": 5,
+      "25,7": 4,
+      "25,8": 3,
+      "25,9": 3,
+      "25,10": 3,
+      "25,11": 5,
+      "25,12": 4,
+      "25,13": 5,
+      "25,14": 5,
+      "26,4": 5,
+      "26,5": 5,
+      "26,6": 5,
+      "26,7": 4,
+      "26,8": 3,
+      "26,9": 3,
+      "26,10": 3,
+      "26,11": 5,
+      "26,12": 5,
+      "26,13": 5,
+      "26,14": 5,
+      "27,4": 5,
+      "27,5": 5,
+      "27,6": 5,
+      "27,7": 4,
+      "27,8": 3,
+      "27,9": 3,
+      "27,10": 3,
+      "27,11": 5,
+      "27,12": 5,
+      "27,13": 5,
+      "27,14": 5,
+      "28,3": 3,
+      "28,4": 3,
+      "28,5": 3,
+      "28,6": 3,
+      "28,7": 3,
+      "28,8": 3,
+      "28,9": 3,
+      "28,10": 6,
+      "28,11": 3,
+      "28,12": 3,
+      "28,13": 3,
+      "29,2": 7,
+      "30,6": 3,
+      "30,7": 3,
+      "30,8": 3,
+      "30,9": 3,
+      "30,10": 6,
+      "30,11": 3,
+      "30,12": 3,
+      "30,13": 3
+    },
+    "RowStyles": {
+      "2": 8,
+      "3": 8,
+      "4": 8,
+      "6": 9,
+      "7": 9,
+      "8": 9,
+      "9": 9,
+      "10": 9,
+      "11": 9,
+      "12": 9,
+      "13": 9,
+      "14": 9,
+      "15": 9,
+      "16": 9,
+      "17": 9,
+      "18": 9,
+      "19": 9,
+      "20": 9,
+      "21": 9
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,0,1,5",
+    "23,13,1,4",
+    "32,2,1,14",
+    "33,2,1,14",
+    "30,2,1,4",
+    "29,2,1,15",
+    "2,0,3,18",
+    "6,0,16,18",
+    "25,4,3,3",
+    "25,8,3,3",
+    "25,12,3,3",
+    "31,2,1,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "모바일마스터페이지",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+        "JavaScript": "Kakao.init('3a99e1ea344f9f27a29298f566cc7acd')",
+        "ID": "b54007ccdf3641fd99e6405724df9ced"
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core",
+        "isMobile": true
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "FGC_Anonymous"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "ID",
+      "Formula": "게시글보기_모바일!$C$31"
+    },
+    {
+      "Name": "URL",
+      "Formula": "게시글보기_모바일!$C$30"
+    },
+    {
+      "Name": "Title",
+      "Formula": "게시글보기_모바일!$A$3"
+    },
+    {
+      "Name": "body",
+      "Formula": "게시글보기_모바일!$A$7"
+    }
+  ]
+}//wEF736Eius987o09iCWf/ykZI1uCrtTiEczo1mTJtX2FpjuIU6z5s4b4p1yoBmtwWH8IMG/oQfdUAVy24k5SFL5Cnh+c2rKkeNb5Z+km9xx/XfvT5k4IHFaD4USp9iqCc2AARh60n5FzPob4FYKYx6B4VB+yb1Pu2vmPpDHZjis7VtVnnKuTH0iPcxkWhMz8flF9RK5z2EWPIQ6HeK8qJaWe5+ATnI6xDqzAR8mS/VTBO9Nk2A6rQ5pTaiKNGGhj3PObRtzkwBFBaluy5Y8ZPq8TCF1I7IewmRZ7WMvekbZpR1rFPTJq4wCKm+a1FZY8fYlXekK7T9HVSnGGPlleyEsMx7hIULpnKnOHa2GDqf3ifYllS564ghUHZbqkRVSA5eKRAzB7vIW43E0mmND4UDrp1JhDOPXtSQ0Ya6OYep81/XZ3JCtf1LAS5MUMejap23Gc3pgi8Ohyqv511OxFifalUGBt4LO9Cvb6cKIMWnTRyYVtUnx63oNIJ5biAkQNEBUkzbzuLXXt+7CsWYUCqNQpi86hCb3atXARr20ceWPIZ9gGoogKPUdoOQrs6Xo+IB6N7qTZt/zSVQXzG7pyZThUeaOwLJkTZ9ykLrnu1RyDxcfogzJ7ShBHoVUgMkYStBkUxgn9hfh5IIVZUX6dDVkFQJQTjm32VChs2JqJR2aHi4A9+Jjycd9M+ksuwfoDVf6mzcts2STWAUnZwTCMksMD6qzGsSFdfL7bsOw6kt0ZHzFr2GFN1ltxe7340BAHadtiVyMvOfZcqXyppFw3Zc2aFyX12OGBj++cYfd2vq82oJbzHToITP79+YKTtOW42Sj/MiGA9ErOayCRIg+RYy/4tqY4QtBAQ6c8Dc0okGXhchfxrEYm+ZnIaDxZKFWxuLX70SASw1NaDN04Kn1PMg==|920

@@ -1,0 +1,232 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 11.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 7.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 13.0
+        }
+      }
+    },
+    "Count": 26
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 56.0,
+          "IsHidden": true
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 56.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      18,
+      19
+    ],
+    "Count": 20
+  },
+  "Values": {
+    "0,18": "게시글ID",
+    "1,18": "URL",
+    "2,1": "메일보내기",
+    "2,18": "제목",
+    "6,1": "받는 사람",
+    "12,3": "메일보내기"
+  },
+  "AttachInfos": {
+    "0,19": {
+      "BindingInfo": {
+        "TableName": "회원_게시글",
+        "ColumnName": "ID",
+        "GUID": "a94f68d9-2e35-4760-88df-d2be3b7375ec"
+      }
+    },
+    "6,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "12,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+            "EnhancedRecipient": {
+              "CommonValue": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=메일보내기_모바일!G7"
+              }
+            },
+            "Subject": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=메일보내기_모바일!T3"
+            },
+            "Content": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta charset=\"utf-8\"> \r\n<body>\r\n<h1>[%CurrentRow=(회원_게시글,제목)%]</h1>\r\n<p>[%CurrentRow=(회원_게시글,내용)%]</p>\r\n<a href=[=T2]>게시글 확인</a>\r\n</body>\r\n</html>",
+            "ID": "91066cb3710e4b8a830dceb49a53a28a"
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          },
+          {
+            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+            "MessageFormula": "메일이 정상적으로 전송되었습니다."
+          }
+        ],
+        "Text": "메일보내기",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "[AUTO]General",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "5,17": 1,
+      "5,18": 1,
+      "6,1": 2,
+      "6,2": 3,
+      "6,3": 3,
+      "6,4": 3,
+      "6,5": 3,
+      "6,6": 1,
+      "6,7": 3,
+      "6,8": 3,
+      "6,9": 3,
+      "6,10": 3,
+      "6,11": 3,
+      "6,12": 3,
+      "6,13": 3,
+      "6,14": 3,
+      "6,15": 3,
+      "6,16": 3,
+      "6,18": 3,
+      "7,17": 1,
+      "7,18": 1,
+      "12,3": 4,
+      "12,4": 3,
+      "12,5": 3,
+      "12,6": 3,
+      "12,7": 3,
+      "12,8": 3,
+      "12,9": 3,
+      "12,10": 3,
+      "12,11": 3,
+      "12,12": 3,
+      "12,13": 3,
+      "12,14": 3,
+      "12,15": 3,
+      "13,3": 3,
+      "13,4": 3,
+      "13,5": 3,
+      "13,6": 3,
+      "13,7": 3,
+      "13,8": 3,
+      "13,9": 3,
+      "13,10": 3,
+      "13,11": 3,
+      "13,12": 3,
+      "13,13": 3,
+      "13,14": 3,
+      "13,15": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "12,3,2,13",
+    "6,6,1,11"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core",
+        "isMobile": true
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser",
+            "FGC_Anonymous"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//5nvX8671tM+XtlBWt90S4kbUKR/FXpDuSElESAX7Ec4Dl2j/hiprgm0rhcn2UU9ekwj4zyJpv9ysZtZViefUV6/M3NMkqoJ68x63HovUFM8qkB/mOHkrJgCr/jBXY1mULZqT4c6ylprndEu0560mpN0CTbg0tgs9wbJkJmK1hO9InEy06EQlJUUVcMR09LvRc7oFjZwgtAw+p8Iv7LLkGKnHIpD4UnjUVuhz/zPgzEk3qGN/7uEZtz5R6IUowvS5YTfG9QpnOdW63RU3AtkEzLdA/5IStC1jTzU8F+zo/ZOA3tayOiR8W6AJ+u7kK5z0dmO8pVElokFKtVDVgQWMbO4tIINlXOkGUznd7ue4FYLLjFMQDb9ssOzLeHuCGD111UxRbfqEOFzRHXHr5LB1LNBo0+cWwueyh7ELYDpqQSpE92P0G4d6UtpwQLQtA0Y9PfRSI2FndG+LPsK/Gd9upIWBrtOkf/UpOX6l62X2LfPLvze67a6Kcmoqh9mp+JyfnbOUao1iOxeSMJwuBGFGmFKfJgHXgQpNdOP+zEfb4sUmJAYRmK9R02yTzpk886jhh0WEZ+++P93U92RKRWzfvuYX8fgWFe1zTIvlavJYgP7uag888VyaakXlKt3PKXnOp3emsugKUa/VOLGm9uDrNGJL3pVI6DdPm9Xnjgidq+d57/3P/EYLei+I3lulb/bwXla6xGjRcTsM1JiuGWfxobUGMHIn+T4NgJu6fu0NK0Ja2Y7b94Vo5YJfXbEScgesPVIXSwiEItnebcgIhyk9TRIGLQeeAYRXdrb0x42jJZLqVoLQuZI8hksHoetqiHYHU+JV+CVdB1GZpKwtr770TQLpdn1gHAxsLF7er1GJR3rYmZSn9fiC0/giknE0VXVLzVkP3s1XsrDPi+FwXZvUoA==|920
